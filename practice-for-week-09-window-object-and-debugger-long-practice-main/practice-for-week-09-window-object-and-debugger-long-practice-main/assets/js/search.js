@@ -1,7 +1,18 @@
-function findElementById(id) {
-    // Return the element in the DOM with corresponding `id`
+function breadthFirstSearch(root) {
+    const queue = [root];
+    let visited = new Set();
+    while (queue) {
+        const node = queue.shift();
+        console.log(document.root)
+        if (node) queue.unshift(node)
+    }
+}
 
-    // Your code here
+function findElementById(id) { // ID = header
+    // Return the element in the DOM with corresponding `id`
+    console.log(documents)
+    console.log(id)
+    breadthFirstSearch(id)
 }
 
 function findFirstElementOfTag(tag) {
@@ -26,4 +37,12 @@ function findElementsOfClass(cls) {
     // Return an array of elements that have are of class `cls`
 
     // Your code here
+}
+
+export {
+    findElementById,
+    findFirstElementOfTag,
+    findFirstElementOfClass,
+    findElementsOfTag,
+    findElementsOfClass
 }
